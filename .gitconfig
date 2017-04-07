@@ -1,0 +1,20 @@
+[user]
+	email = krzysztof.rzymkowski@lingaro.com
+	name = Krzysztof Rzymkowski
+[push]
+	default = simple
+[core]
+	autocrlf = input
+[alias]
+	lol = log --oneline --decorate --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	prune = fetch --prune
+[pull]
+	rebase = true
+[merge]
+	ff = only
+[diff]
+	tool = icdiff
+[difftool]
+	prompt = false
+[difftool "icdiff"]
+	cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
